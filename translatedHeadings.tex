@@ -1,0 +1,55 @@
+\newcommand{\paperSubTitle}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{Outline and Topic Proposal}{}
+}
+
+\newcommand{\sectionQuestions}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{\section{Scope of Work and Study Area}}{}
+}
+
+\newcommand{\sectionQuestionsDescription}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{In this section, I describe the proposed scope of work and the study area.}{}
+}
+
+\newcommand{\sectionInitialTOC}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{\section{Relevant Datasets}}{}
+}
+
+\newcommand{\sectionInitialTOCDescription}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{In this section, I outline the probable content of the final paper in probable sections.}{}
+}
+
+\newcommand{\sectionSource}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{\section{Relevant Related Work}}{}
+}
+
+
+\newcommand{\sectionSourceDescription}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{In this section, we'll talk about relevant related work.}{}
+}
+
+\newcommand{\questionOne}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{What is the problem I want to address in this work?}{}
+}
+
+\newcommand{\questionTwo}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{Why is it a problem?}{}
+}
+
+\newcommand{\questionThree}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{What is my proposed solution?}{}
+}
+
+\newcommand{\questionFour}[1]
+{
+    \ifthenelse{\equal{#1}{en}}{Why is it a solution?}{}
+}

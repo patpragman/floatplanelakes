@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\begin{document}
+
+% Define block styles
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=6em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{line} = [draw, -latex']
+    
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[node distance = 2cm, auto]
+        % Place nodes
+        \node [block] (algo) {Algorithm Selection};
+        \node [block, below of=algo] (criterion) {Criterion Investigation};
+        \node [block, below of=criterion] (dataviz) {DataViz and Mapping};
+        \node [block, below of=dataviz] (writeup) {Write up and publication};
+        % Draw edges
+        \path [line] (algo) -- (criterion);
+        \path [line] (criterion) -- (dataviz);
+        \path [line] (dataviz) -- (writeup);
+    \end{tikzpicture}
+    \caption{Flowchart of the Process}
+    \label{fig:flowchart}
+\end{figure}
+
+\end{document}
